@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fashion Website</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+
+        <!-- Font Awesome  -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/carousel.css">
+
+        <style>
+   
+    </style>
+    </head>
+
+    <body>
+
+        <!-- Header/Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-black" href="#">
+                    <i class="fas fa-tshirt me-2"></i>Fashionista
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="summercollection.html">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buynow.html">Buy Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#shoppingCart">
+                                <!--Icon-->
+                                <i class="fas fa-shopping-cart me-1"></i>Cart
+                                <span
+                                    class="badge bg-danger rounded-pill cart-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Carousel -->
+
+        <div id="heroCarousel" class="carousel slide carousel-fade"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-slide">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-75">
+                                <div
+                                    class="col-md-6 text-center text-md-start text-white ps-md-5">
+                                    <h1 class="display-4 fw-bold mb-3">Discover
+                                        Your Style</h1>
+                                    <p class="lead mb-4">Explore the latest
+                                        trends in fashion.</p>
+                                    <a href="#featured-products"
+                                        class="btn btn-light btn-lg px-4 mb-2">Shop
+                                        Now</a>
+                                    <img src="images/DiscoverYourStyle.jpg"
+                                        alt="Fashion Hero"
+                                        class="img-fluid rounded hero-image hero-image-mobile d-block d-md-none mt-4">
+                                </div>
+                                <div
+                                    class="col-md-6 d-none d-md-block mt-1 mb-1">
+                                    <img src="images/DiscoverYourStyle.jpg"
+                                        alt="Fashion Hero"
+                                        class="img-fluid rounded hero-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-slide">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-75">
+                                <div
+                                    class="col-md-6 text-center text-md-start text-white ps-md-5">
+                                    <h1 class="display-4 fw-bold mb-3">Summer
+                                        Collection</h1>
+                                    <p class="lead mb-4">Hot styles for the warm
+                                        season.</p>
+                                    <a href="#summer-collection"
+                                        class="btn btn-light btn-lg px-4">View
+                                        Collection</a>
+                                    <img src="images/SummerCollection.webp"
+                                        alt="Summer Collection"
+                                        class="img-fluid rounded hero-image hero-image-mobile d-block d-md-none mt-4">
+                                </div>
+                                <div
+                                    class="col-md-6 d-none d-md-block mt-2 mb-2">
+                                    <img src="images/SummerCollection.webp"
+                                        alt="Summer Collection"
+                                        class="img-fluid rounded hero-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero-slide bg-danger">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-75">
+                                <div
+                                    class="col-md-6 text-center text-md-start text-white ps-md-5">
+                                    <h1 class="display-4 fw-bold mb-3">Special
+                                        Offers</h1>
+                                    <p class="lead mb-4">Limited time discounts
+                                        on selected items.</p>
+                                    <a href="#featured-products"
+                                        class="btn btn-light btn-lg px-4">Shop
+                                        Deals</a>
+                                    <img src="images/SpecialOffers.avif"
+                                        alt="Special Offers"
+                                        class="img-fluid rounded hero-image hero-image-mobile d-block d-md-none mt-4">
+                                </div>
+                                <div
+                                    class="col-md-6 d-none d-md-block mt-2 mb-2">
+                                    <img src="images/SpecialOffers.avif"
+                                        alt="Special Offers"
+                                        class="img-fluid rounded hero-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!--Images / Discover all collections-->
+
+        <section class="py-5">
+            <div class="container-fluid">
+                <div class="mx-2 mx-md-4">
+                    <div class="row text-center">
+                        <div class="col-6 col-md-3 p-0">
+                            <div class="position-relative">
+                                <img src="images/DressWithPearl.jpg"
+                                    class="img-fluid w-100"
+                                    style="height: 550px; object-fit: cover;"
+                                    alt="RAERE by LORENA RAE">
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                    <h5 class="fw-bold">RAERE</h5>
+                                    <small>BY LORENA RAE</small><br>
+                                    <span class="badge bg-dark mt-1">ABOUT
+                                        YOU</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-0">
+                            <div class="position-relative">
+                                <img src="images/GrayBlazer.jpg"
+                                    class="img-fluid w-100"
+                                    style="height: 550px; object-fit: cover;"
+                                    alt="Daahls by Emma Roberts">
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                    <h5 class="fw-bold">Daahls</h5>
+                                    <small>BY EMMA ROBERTS</small><br>
+                                    <span class="badge bg-dark mt-1">ABOUT
+                                        YOU</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-0">
+                            <div class="position-relative">
+                                <img src="images/DarkDenimJeans.jpg"
+                                    class="img-fluid w-100"
+                                    style="height: 550px; object-fit: cover;"
+                                    alt="Florence by nils">
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                    <h5 class="fw-bold text-lowercase"
+                                        style="color: #cbbfff;">florence</h5>
+                                    <small>by nils</small><br>
+                                    <span class="badge bg-dark mt-1">ABOUT
+                                        YOU</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 p-0">
+                            <div class="position-relative">
+                                <img src="images/womanCropTop.webp"
+                                    class="img-fluid w-100"
+                                    style="height: 550px; object-fit: cover;"
+                                    alt="Marie von Behrens">
+                                <div
+                                    class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                    <h5 class="fw-bold">MARIE VON BEHRENS</h5>
+                                    <span class="badge bg-dark mt-1">ABOUT
+                                        YOU</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="#featured-products"
+                            class="btn btn-outline-dark px-4 py-2 pt-3 pb-3"
+                            style="border: none;">Discover
+                            all
+                            Collections</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Summer Collection-->
+        <section class="my-5" id="summer-collection">
+            <div class="container-fluid px-0" style="max-width: 1400px;">
+                <div class="row g-0 align-items-stretch">
+
+                    <!-- Imazhi vendoset nalt ne mobile djathtas ne desktop -->
+                    <div class="col-12 col-md-6 order-md-2">
+                        <img
+                            src="images/Pink Satin Tie Front Long Sleeve Crop Top.webp"
+                            alt="Swimwear"
+                            class="img-fluid w-100 "
+                            style="object-fit: cover; max-height: auto;">
+                    </div>
+
+                    <!-- Teksti poshte ne mobilee majtas ne desktop) -->
+                    <div
+                        class="col-12 col-md-6 d-flex flex-column justify-content-center bg-black text-white p-5 order-md-1">
+                        <div>
+                            <p class="text-uppercase  mb-2">Discover your
+                                perfect fit</p>
+                            <h2 class="fw-bold mb-4"
+                                style="font-family: 'Times New Roman', Times, serif;">
+                                Summer Collection
+                            </h2>
+                            <a href="summercollection.html"
+                                class="btn btn-outline-light px-4 py-2"
+                                style="width: 150px;">
+                                View
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products py-5" id="featured-products">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">Featured Products</h2>
+                        <p class="lead text-muted">Discover our most popular
+                            items</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="categoryTabsContent">
+                    <!-- All Products Tab -->
+                    <div class="tab-pane fade show active" id="all"
+                        role="tabpanel" aria-labelledby="all-tab">
+                        <div
+                            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                            <!-- Product 1 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img
+                                        src="images/CombinedTopwithBuckle.webp"
+                                        class="card-img-top"
+                                        alt="Combined Top with Buckle">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Combined Top
+                                            with
+                                            Buckle</h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$26.99</p>
+
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,L</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Combined%20Top%20with%20Buckle&price=26.99&size=XS,S,L&img=images/CombinedTopwithBuckle.webp"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 2 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-danger text-white ps-3">Sale</div>
+                                    <img
+                                        src="images/OnesholderSatinCropTop.webp "
+                                        class="card-img-top product-img"
+                                        alt="Satin Crop Top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Satin Crop
+                                            Top</h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$19.90</p>
+                                            <div class="product-rating">
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,M</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2 ">
+                                            <a
+                                                href="buynow.html?name=Satin%20Crop%20Top&price=19.90&size=XS,S,M&img=images/OnesholderSatinCropTop.webp"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 3 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img src="images/HalterTop.jpg"
+                                        class="card-img-top product-img"
+                                        alt="Halter Top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Halter
+                                            Top</h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$24.90</p>
+
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,M</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Halter%20Top&price=24.90&size=XS,S,M&img=images/HalterTop.jpg
+                                            "
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+                                            <button
+                                                class="btn add-to-cart ">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 4 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img
+                                        src="images/StretchTopwithSquareNeckline.jpg"
+                                        class="card-img-top"
+                                        alt="Stretch Top with Square Neckline">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Stretch Top
+                                            with
+                                            Square Neckline</h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$10.99</p>
+
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,M,L,XL</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Stretch%20Top%20with%20Square%20Neckline&price=10.99&size=XS,S,M,L,XL&img=images/StretchTopwithSquareNeckline.jpg"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product 5 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-danger text-white ps-3">Sale</div>
+                                    <img
+                                        src="images/PinkTulipSleeveNeckButtonDetail.webp"
+                                        class="card-img-top"
+                                        alt="Pink Tulip Sleeve Neck Button Detail">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pink Tulip Sleeve
+                                            Neck Button Detail</h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$12.90</p>
+
+                                        </div>
+                                        <p class="card-text">Size: XS,S,M</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Pink%20Tulip%20Sleeve%20Neck%20Button%20Detail&price=12.90&size=XS,S,M&img=images/PinkTulipSleeveNeckButtonDetail.webp"
+                                                class="btn flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 6 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img
+                                        src="images/Satin Tie Front Long Sleeve Crop Top.webp"
+                                        class="card-img-top product-img"
+                                        alt="Halter Top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Satin Tie Front
+                                            Long
+                                            Sleeve Crop Top
+                                        </h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$37.99</p>
+                                            <div class="product-rating">
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,M</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Satin%20Tie&20Front%20Long%20Sleeve%20Crop%20Top&price=37.99&size=XS,S,M&img=images/Satin Tie Front Long Sleeve Crop Top.webp"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 7 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img
+                                        src="images/Pink Satin Tie Front Long Sleeve Crop Top.webp"
+                                        class="card-img-top product-img"
+                                        alt="Halter Top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pink Satin Tie
+                                            Front
+                                            Long Sleeve Crop Top
+                                        </h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$37.99</p>
+                                            <div class="product-rating">
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,M</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Pink%20Satin%20Tie%20Front%20Long%20Sleeve%20Crop%20Top&price=37.99&size=XS,S,M&img=images/Pink Satin Tie Front Long Sleeve Crop Top.webp"
+                                                class="btn flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 8 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-danger text-white ps-3">Sale</div>
+                                    <img src="images/Satin Blouse Shirt.jpg"
+                                        class="card-img-top product-img"
+                                        alt="Halter Top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Satin Blouse
+                                            Shirt
+                                        </h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$17.90</p>
+
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,M</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Satin%20Blouse%20Shirt&price=17.90&size=XS,S,M&img=images/Satin Blouse Shirt.jpg"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- New Arrivals Section with Carousel -->
+        <section class="new-arrivals py-5 bg-light">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">New Arrivals</h2>
+                        <p class="lead text-muted">Check out our latest fashion
+                            items</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div id="newArrivalsCarousel" class="carousel slide"
+                            data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button"
+                                    data-bs-target="#newArrivalsCarousel"
+                                    data-bs-slide-to="0" class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
+                                <button type="button"
+                                    data-bs-target="#newArrivalsCarousel"
+                                    data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div
+                                        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                        <div class="col">
+                                            <div
+                                                class="card h-100 product-card">
+                                                <div
+                                                    class="product-badge bg-success text-white ps-3">New</div>
+                                                <img src="images/DenimTop.jpg"
+                                                    class="card-img-top"
+                                                    alt="Denim Top">
+
+                                                <div
+                                                    class="card-body  ">
+                                                    <h5 class="card-title">Denim
+                                                        Top</h5>
+                                                    <p>Size: XS,S,L</p>
+                                                    <p
+                                                        class="card-text fw-bold">$32.99</p>
+                                                    <a
+                                                        href="buynow.html?name=Denim%20Top&price=32.99&size=XS,S,L&img=images/DenimTop.jpg"
+                                                        class="btn w-50 ">Buy
+                                                        Now</a>
+                                                    <button
+                                                        class="btn add-to-cart ">
+                                                        <i
+                                                            class="fas fa-shopping-cart me-1"></i>Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="card h-100 product-card">
+                                                <div
+                                                    class="product-badge bg-success text-white ps-3">New</div>
+                                                <img
+                                                    src="images/StraplessTopWithRhinestones.jpg"
+                                                    class="card-img-top product-img"
+                                                    alt="StraplessTopWithRhinestones">
+                                                <div class="card-body">
+                                                    <h5 class="card-title"
+                                                        style="margin-top: 5px;">Strapless
+                                                        Top </h5>
+                                                    <p>Size: S, M</p>
+                                                    <p
+                                                        class="card-text fw-bold">$22.90</p>
+                                                    <a
+                                                        href="buynow.html?name=Strapless%20Top%20With%20Rhinestones&price=22.90&size=S,M&img=images/StraplessTopWithRhinestones.jpg"
+                                                        class="btn w-50">Buy
+                                                        Now</a>
+                                                    <button
+                                                        class="btn add-to-cart">
+                                                        <i
+                                                            class="fas fa-shopping-cart me-1"></i>Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="card h-100 product-card">
+                                                <div
+                                                    class="product-badge bg-success text-white ps-3">New</div>
+                                                <img
+                                                    src="images/RedCorsetTop.webp"
+                                                    class="card-img-top product-img"
+                                                    alt="Halter Top">
+                                                <div class="card-body">
+                                                    <h5 class="card-title"
+                                                        style="margin-top: 5px;">Red
+                                                        Corset Top</h5>
+                                                    <p>Size:S,M,L</p>
+                                                    <p
+                                                        class="card-text fw-bold">$22.90</p>
+                                                    <a
+                                                        href="buynow.html?name=Red%20Corset%20Top&price=22.90&size=S,M,L&img=images/CorsetTop.webp"
+                                                        class="btn  w-50">Buy
+                                                        Now</a>
+                                                    <button
+                                                        class="btn add-to-cart">
+                                                        <i
+                                                            class="fas fa-shopping-cart me-1"></i>Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                                        <div class="col">
+                                            <div
+                                                class="card h-100 product-card">
+                                                <div
+                                                    class="product-badge bg-success text-white ps-3">New</div>
+                                                <img
+                                                    src="images/DressWithPearl.jpg"
+                                                    class="card-img-top"
+                                                    alt="Dress With Pearl">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Dress
+                                                        With Pearl</h5>
+                                                    <p>Size: S,M,L</p>
+                                                    <p
+                                                        class="card-text fw-bold">$47.99</p>
+                                                    <a
+                                                        href="buynow.html?name=Dress%20With%20Pearl&price=47.99&size=S,M,L&img=images/DressWithPearl.jpg"
+                                                        class="btn  w-50">Buy
+                                                        Now</a>
+                                                    <button
+                                                        class="btn add-to-cart">
+                                                        <i
+                                                            class="fas fa-shopping-cart me-1"></i>Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="card h-100 product-card">
+                                                <div
+                                                    class="product-badge bg-success text-white ps-3">New</div>
+                                                <img
+                                                    src="images/DoubleBreastedBlazer.jpg"
+                                                    class="card-img-top"
+                                                    alt="DoubleBreastedBlazer">
+                                                <div class="card-body">
+                                                    <h5
+                                                        class="card-title">Breasted
+                                                        Blazer</h5>
+                                                    <p>M,L,XL</p>
+                                                    <p
+                                                        class="card-text fw-bold">$50.00</p>
+                                                    <a
+                                                        href="buynow.html?name=Double%Breasted%20Blazer&price=50.00&size=M,L,XL&img=images/DoubleBreastedBlazer.jpg"
+                                                        class="btn  w-50">Buy
+                                                        Now</a>
+                                                    <button
+                                                        class="btn add-to-cart">
+                                                        <i
+                                                            class="fas fa-shopping-cart me-1"></i>Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="card h-100 product-card">
+                                                <div
+                                                    class="product-badge bg-success text-white ps-3">New</div>
+                                                <img
+                                                    src="images/MiniCut Out Blazer.jpg"
+                                                    class="card-img-top"
+                                                    alt="MiniCut Out Blazer">
+                                                <div class="card-body">
+                                                    <h5
+                                                        class="card-title">Minicut
+                                                        Out Blazer</h5>
+                                                    <p>Size: S,M</p>
+                                                    <p
+                                                        class="card-text fw-bold">$34.99</p>
+                                                    <a
+                                                        href="buynow.html?name=MiniCut%20Out%20Blazer&price=34.99&size=S,M&img=images/MiniCut Out Blazer.jpg"
+                                                        class="btn w-50 ">Buy
+                                                        Now</a>
+                                                    <button
+                                                        class="btn add-to-cart">
+                                                        <i
+                                                            class="fas fa-shopping-cart me-1"></i>Cart
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#newArrivalsCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#newArrivalsCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                    id="CIcon-newarrivals"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Jeans-->
+        <section class="featured-products py-5" id="featured-products">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">Jeans</h2>
+                        <p class="lead text-muted">Discover our most popular
+                            Jeans
+                            items</p>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="categoryTabsContent">
+                    <!-- All Products Tab -->
+                    <div class="tab-pane fade show active" id="all"
+                        role="tabpanel" aria-labelledby="all-tab">
+                        <div
+                            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                            <!-- Product 15 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img
+                                        src="images/MarineJeans.jpg"
+                                        class="card-img-top"
+                                        alt="MarineJeans">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Marine Jeans
+
+                                        </h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$32.99</p>
+                                            <div class="product-rating">
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Size:
+                                            M,L,XL</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Marine%20Jeans&price=32.99&size=M,L,XL&img=images/MarineJeans.jpg"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 16 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img
+                                        src="images/DarkDenimJeans.jpg"
+                                        class="card-img-top"
+                                        alt="DarkDenimJeans">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dark Denim
+                                            Jeans</h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$26.99</p>
+                                            <div class="product-rating">
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,L</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=Dark%20Denim%20Jeans&price=26.99&size=XS,S,L&img=images/DarkDenimJeans.jpg"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+                                            <button
+                                                class="btn add-to-cart ">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 15 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img
+                                        src="images/HighWaistStraightJeans.jpg"
+                                        class="card-img-top"
+                                        alt="HighWaistStraightJeans">
+                                    <div class="card-body">
+                                        <h5 class="card-title">High Waist
+                                            Straight
+                                            Jeans</h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$26.99</p>
+                                            <div class="product-rating">
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,L</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=High%20Waist%20Straight%20Jeans&price=26.99&size=XS,S,L&img=images/HighWaistStraightJeans.jpg"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 17 -->
+                            <div class="col">
+                                <div class="card h-100 product-card">
+                                    <div
+                                        class="product-badge bg-success text-white ps-3">Popular</div>
+                                    <img
+                                        src="images/HighWaistJEans.jpg"
+                                        class="card-img-top"
+                                        alt="HighWaistJEans">
+                                    <div class="card-body">
+                                        <h5 class="card-title">High Waist Jeans
+                                        </h5>
+                                        <div
+                                            class="d-flex justify-content-between align-items-center mb-2">
+                                            <p
+                                                class="card-text fw-bold mb-0">$30.99</p>
+                                            <div class="product-rating">
+
+                                            </div>
+                                        </div>
+                                        <p class="card-text">Size:
+                                            XS,S,L</p>
+                                    </div>
+                                    <div
+                                        class="card-footer bg-white border-top-0">
+                                        <div class="d-flex gap-2">
+                                            <a
+                                                href="buynow.html?name=High%20Waist%20JEans&price=30.99&size=XS,S,L&img=images/HighWaistJEans.jpg"
+                                                class="btn  flex-grow-1">Buy
+                                                Now</a>
+
+                                            <button
+                                                class="btn add-to-cart">
+                                                <i
+                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <section class="py-5">
+                            <div class="container-fluid">
+                                <div class="col-12 text-center">
+                                    <h2 class="section-title pt-3">Dresses
+                                        Collections</h2>
+                                    <p class="lead text-muted">Discover our
+                                        dresses
+                                        items
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Dresses-->
+                            <section class="py-5">
+                                <div class="container-fluid">
+                                    <div class="mx-2 mx-md-4">
+                                        <div class="row text-center">
+                                            <div class="col-6 col-md-3 p-0">
+                                                <div class="position-relative">
+                                                    <img
+                                                        src="images/LimeYellowDress.jpg"
+                                                        class="img-fluid w-100"
+                                                        style="height: 550px; object-fit: cover;"
+                                                        alt="RAERE by LORENA RAE">
+                                                    <div
+                                                        class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                                        <h5 class="fw-bold">Lime
+                                                            Yellow
+                                                            Dress</h5>
+
+                                                        <span
+                                                            class="badge bg-dark mt-1">ABOUT
+                                                            YOU</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3 p-0">
+                                                <div class="position-relative">
+                                                    <img
+                                                        src="images/DressWithPearl.jpg"
+                                                        class="img-fluid w-100"
+                                                        style="height: 550px; object-fit: cover;"
+                                                        alt="Daahls by Emma Roberts">
+                                                    <div
+                                                        class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                                        <h5 class="fw-bold "
+                                                            style="color: rgb(196, 140, 140);">Dress
+                                                            with
+                                                            Pearls</h5>
+
+                                                        <span
+                                                            class="badge bg-dark mt-1">ABOUT
+                                                            YOU</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3 p-0">
+                                                <div class="position-relative">
+                                                    <img
+                                                        src="summerCollectionsImg/WeddingDress.png"
+                                                        class="img-fluid w-100"
+                                                        style="height: 550px; object-fit: cover;"
+                                                        alt="Florence by nils">
+                                                    <div
+                                                        class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                                        <h5
+                                                            class="fw-bold text-lowercase"
+                                                            style="color: #cbbfff;">Wedding
+                                                            Dress</h5>
+
+                                                        <span
+                                                            class="badge bg-dark mt-1">ABOUT
+                                                            YOU</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 col-md-3 p-0">
+                                                <div class="position-relative">
+                                                    <img
+                                                        src="images/OrangeDress.avif"
+                                                        class="img-fluid w-100"
+                                                        style="height: 550px; object-fit: cover;"
+                                                        alt="Marie von Behrens">
+                                                    <div
+                                                        class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                                        <h5 class="fw-bold"
+                                                            style="color: #424b1f;">Orange
+                                                            button dress
+                                                        </h5>
+                                                        <span
+                                                            class="badge bg-dark mt-1">ABOUT
+                                                            YOU</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-4">
+                                                <a
+                                                    href="summercollection.html#dresses"
+                                                    class="btn btn-outline-dark px-4  py-2  pt-3 pb-3"
+                                                    style="border: none;">Discover
+                                                    all
+                                                    Dresses</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!-- Fashion Tips Accordion -->
+                            <section
+                                class="fashion-tips py-5">
+                                <div class="container">
+                                    <div
+                                        class="row mb-4">
+                                        <div
+                                            class="col-12 text-center">
+                                            <h2
+                                                class="section-title">Fashion
+                                                Tips &
+                                                Guides</h2>
+                                            <p
+                                                class="lead text-muted">Expert
+                                                advice
+                                                to
+                                                elevate
+                                                your
+                                                style</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div
+                                            class="col-lg-8 mx-auto">
+                                            <div
+                                                class="accordion"
+                                                id="fashionTipsAccordion">
+                                                <div
+                                                    class="accordion-item">
+                                                    <h2
+                                                        class="accordion-header"
+                                                        id="headingOne">
+                                                        <button
+                                                            class="accordion-button"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOne"
+                                                            aria-expanded="true"
+                                                            aria-controls="collapseOne">
+                                                            How
+                                                            to
+                                                            Style
+                                                            Tops
+                                                            for
+                                                            Different
+                                                            Occasions
+                                                        </button>
+                                                    </h2>
+                                                    <div
+                                                        id="collapseOne"
+                                                        class="accordion-collapse collapse show"
+                                                        aria-labelledby="headingOne"
+                                                        data-bs-parent="#fashionTipsAccordion">
+                                                        <div
+                                                            class="accordion-body">
+                                                            <p>Versatility
+                                                                is
+                                                                key
+                                                                when
+                                                                styling
+                                                                tops
+                                                                for
+                                                                different
+                                                                occasions:</p>
+                                                            <ul>
+                                                                <li><strong>Casual
+                                                                        Outings:</strong>
+                                                                    Pair
+                                                                    a
+                                                                    crop
+                                                                    top
+                                                                    or
+                                                                    halter
+                                                                    top
+                                                                    with
+                                                                    high-waisted
+                                                                    jeans
+                                                                    and
+                                                                    sneakers
+                                                                    for
+                                                                    a
+                                                                    relaxed
+                                                                    look.</li>
+                                                                <li><strong>Office
+                                                                        Wear:</strong>
+                                                                    Opt
+                                                                    for
+                                                                    a
+                                                                    button-down
+                                                                    shirt
+                                                                    or
+                                                                    a
+                                                                    blouse
+                                                                    with
+                                                                    tailored
+                                                                    pants
+                                                                    or
+                                                                    a
+                                                                    pencil
+                                                                    skirt.</li>
+                                                                <li><strong>Evening
+                                                                        Events:</strong>
+                                                                    Choose
+                                                                    tops
+                                                                    with
+                                                                    embellishments
+                                                                    like
+                                                                    rhinestones
+                                                                    or
+                                                                    sequins,
+                                                                    paired
+                                                                    with
+                                                                    sleek
+                                                                    pants
+                                                                    or
+                                                                    a
+                                                                    skirt.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="accordion-item">
+                                                    <h2
+                                                        class="accordion-header"
+                                                        id="headingTwo">
+                                                        <button
+                                                            class="accordion-button collapsed"
+                                                            type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseTwo"
+                                                            aria-expanded="false"
+                                                            aria-controls="collapseTwo">
+                                                            Finding
+                                                            the
+                                                            Perfect
+                                                            Dress
+                                                            for
+                                                            Your
+                                                            Body
+                                                            Type
+                                                        </button>
+                                                    </h2>
+                                                    <div
+                                                        id="collapseTwo"
+                                                        class="accordion-collapse collapse"
+                                                        aria-labelledby="headingTwo"
+                                                        data-bs-parent="#fashionTipsAccordion">
+                                                        <div
+                                                            class="accordion-body">
+                                                            <p>Dresses
+                                                                that
+                                                                flatter
+                                                                your
+                                                                unique
+                                                                shape
+                                                                can
+                                                                boost
+                                                                your
+                                                                confidence:</p>
+                                                            <ul>
+                                                                <li><strong>Hourglass:</strong>
+                                                                    Wrap
+                                                                    dresses
+                                                                    and
+                                                                    fit-and-flare
+                                                                    styles
+                                                                    accentuate
+                                                                    your
+                                                                    natural
+                                                                    curves.</li>
+                                                                <li><strong>Pear-shaped:</strong>
+                                                                    A-line
+                                                                    dresses
+                                                                    balance
+                                                                    proportions
+                                                                    by
+                                                                    highlighting
+                                                                    the
+                                                                    waist
+                                                                    and
+                                                                    flowing
+                                                                    over
+                                                                    the
+                                                                    hips.</li>
+                                                                <li><strong>Apple-shaped:</strong>
+                                                                    Empire
+                                                                    waist
+                                                                    dresses
+                                                                    draw
+                                                                    attention
+                                                                    to
+                                                                    the
+                                                                    bust
+                                                                    and
+                                                                    flow
+                                                                    away
+                                                                    from
+                                                                    the
+                                                                    midsection.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!--Why Choose us part-->
+                            <section id="features" class="py-5 bg-light">
+                                <div class="container text-center">
+                                    <h2 class="mb-4 mt-5">Why Choose Us</h2>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <span class="shop-icon">🛍️</span>
+
+                                            <h5>Wide Selection</h5>
+                                            <p>We offer a variety of styles and
+                                                sizes to suit
+                                                everyone.</p>
+                                        </div>
+                                        <div class="col-md-4" id="Shipping">
+
+                                            <span
+                                                class="delivery-icon mb-3">🚚</span>
+
+                                            <h5>Fast Delivery</h5>
+                                            <p>Your items shipped swiftly and
+                                                safely
+                                                to your door.</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <span class="chatbubble">💬</span>
+                                            <!-- <i class="fas fa-comment-dots"></i>-->
+
+                                            <h5>Customer Support</h5>
+                                            <p>We are here to help you 24/7 with
+                                                any
+                                                inquiries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!--Footer-->
+                            <footer class="footer bg-dark text-white py-5 mt-5">
+                                <div class="container">
+                                    <div class="row gy-4">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <h5 class="mb-3">Fashionista</h5>
+                                            <p>Your destination for the latest
+                                                fashion trends and styles.</p>
+                                            <div class="social-icons mt-3">
+                                                <a href="#"
+                                                    class="text-white me-3"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                                <a href="#"
+                                                    class="text-white me-3"><i
+                                                        class="fab fa-instagram"></i></a>
+                                                <a href="#"
+                                                    class="text-white me-3"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <a href="#"
+                                                    class="text-white"><i
+                                                        class="fab fa-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-2">
+                                            <h5 class="mb-3">Shop</h5>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2"><a
+                                                        href="summercollection.html"
+                                                        class="text-white text-decoration-none">Women</a></li>
+                                                <li class="mb-2"><a
+                                                        href="summercollection.html#accessories"
+                                                        class="text-white text-decoration-none">Accessories</a></li>
+                                                <li class="mb-2"><a
+                                                        href="index.html#featured-products"
+                                                        class="text-white text-decoration-none">Sale</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-2">
+                                            <h5 class="mb-3">Help</h5>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2"><a
+                                                        href="#features"
+                                                        class="text-white text-decoration-none">Shipping</a></li>
+                                                <li class="mb-2"><a
+                                                        href="#"
+                                                        class="text-white text-decoration-none">Returns</a></li>
+                                                <li class="mb-2"><a
+                                                        href="contact.html"
+                                                        class="text-white text-decoration-none">Contact
+                                                        Us</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4">
+                                            <h5 class="mb-3">Contact</h5>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-2"><i
+                                                        class="fas fa-map-marker-alt me-2"></i>
+                                                    10000 Prishtine, Rruga
+                                                    B</li>
+                                                <li class="mb-2"><i
+                                                        class="fas fa-phone me-2"></i>
+                                                    +383 (45) 123-456</li>
+                                                <li class="mb-2"><i
+                                                        class="fas fa-envelope me-2"></i>
+                                                    info@fashionista.com</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-12 text-center">
+                                            <p class="mb-0">&copy; 2025
+                                                Fashionista. All rights
+                                                reserved.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+
+                            <script src="script.js"></script>
+
+                        </body>
+                    </html>

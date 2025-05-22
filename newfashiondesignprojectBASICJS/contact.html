@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fashion Website</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header/Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-black" href="#">
+                    <i class="fas fa-tshirt me-2"></i>Fashionista
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link "
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="summercollection.html">Collection</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buynow.html">Buy Now</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active"
+                                href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#shoppingCart">
+                                <i class="fas fa-shopping-cart me-1"></i>Cart
+                                <span
+                                    class="badge bg-danger rounded-pill cart-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Section-->
+        <section class="contact py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center">Contact Us</h2>
+                <form id="contact-form" class="mx-auto"
+                    style="max-width: 600px;">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name"
+                            placeholder="Your Name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email"
+                            placeholder="Your Email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your
+                            Message</label>
+                        <textarea class="form-control" id="message" rows="5"
+                            placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary px-4">Send
+                            Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer bg-dark text-white py-5 mt-5"
+            style="width: 100%;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5 class="mb-3">Fashionista</h5>
+                        <p class="mb-3">Your destination for the
+                            latest fashion trends and
+                            styles.</p>
+                        <div class="social-icons">
+                            <a href="#"
+                                class="text-white me-3"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#"
+                                class="text-white me-3"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="#"
+                                class="text-white me-3"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white"><i
+                                    class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <h5 class="mb-3">Shop</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a
+                                    href="summercollection.html"
+                                    class="text-white text-decoration-none">Women</a></li>
+
+                            <li class="mb-2"><a
+                                    href="summercollection.html#accessories"
+                                    class="text-white text-decoration-none">Accessories</a></li>
+                            <li class="mb-2"><a
+                                    href="index.html#featured-products"
+                                    class="text-white text-decoration-none">Sale</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-4 mb-md-0">
+                        <h5 class="mb-3">Help</h5>
+                        <ul class="list-unstyled">
+
+                            <li class="mb-2"><a href="#"
+                                    class="text-white text-decoration-none">Shipping</a></li>
+                            <li class="mb-2"><a href="#"
+                                    class="text-white text-decoration-none">Returns</a></li>
+                            <li class="mb-2"><a href="#"
+                                    class="text-white text-decoration-none">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Contact</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i
+                                    class="fas fa-map-marker-alt me-2"></i>
+                                10000 Prishtine, Rruga B
+                            </li>
+                            <li class="mb-2"><i
+                                    class="fas fa-phone me-2"></i>
+                                +383 (45) 123-456</li>
+                            <li class="mb-2"><i
+                                    class="fas fa-envelope me-2"></i>
+                                info@fashionista.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <p class="mb-0">&copy; 2025 Fashionista.
+                            All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fashion Website</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    flex: 1;
+  }
+
+                 html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+                 .btn{
+    background-color: #cd9159;
+color: white;
+
+  }
+  .btn:hover{
+    background-color: #dec0a4;
+
+  }
+            </style>
+
+    </head>
+    <body>
+        <main>
+            <!-- Header/Navbar -->
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                <div class="container">
+                    <a class="navbar-brand fw-bold fs-3 text-black" href="#">
+                        <i class="fas fa-tshirt me-2"></i>Fashionista
+                    </a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link "
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  active"
+                                    href="summercollection.html">Collection</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="buynow.html">Buy
+                                    Now</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="contact.html">Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#shoppingCart">
+                                    <i
+                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                    <span
+                                        class="badge bg-danger rounded-pill cart-count">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--Summer Collection Category-->
+            <section class="py-5">
+                <div class="container-fluid">
+                    <div class="col-12 text-center">
+                        <h2 class="section-title">Summer Collections</h2>
+                        <p class="lead text-muted">Discover our summer items
+                        </p>
+                    </div>
+                    <div class="mx-2 mx-md-4">
+                        <div class="row text-center">
+                            <div class="col-6 col-md-3 p-0">
+                                <div class="position-relative">
+                                    <img
+                                        src="summerCollectionsImg/CurvyTop.avif"
+                                        class="img-fluid w-100"
+                                        style="height: 550px; object-fit: cover;"
+                                        alt="RAERE by LORENA RAE">
+                                    <div
+                                        class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                                        <h5 class="fw-bold"
+                                            style="color: #6c6b74;;">Curvy
+                                            Top</h5>
+
+                                        <span class="badge bg-dark mt-1">For
+                                            you</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 p-0">
+                                <div class="position-relative">
+                                    <img
+                                        src="summerCollectionsImg/DenimShorts.avif"
+                                        class="img-fluid w-100"
+                                        style="height: 550px; object-fit: cover;"
+                                        alt="Daahls by Emma Roberts">
+                                    <div
+                                        class="position-absolute top-50 start-50 translate-middle text-black text-center ">
+                                        <h5 class="fw-bold">Denim Shorts</h5>
+
+                                        <span class="badge bg-dark mt-1">For
+                                            you</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 p-0">
+                                <div class="position-relative">
+                                    <img
+                                        src="summerCollectionsImg/CasualDress.webp"
+                                        class="img-fluid w-100"
+                                        style="height: 550px; object-fit: cover;"
+                                        alt="Florence by nils">
+                                    <div
+                                        class="position-absolute top-50 start-50 translate-middle text-black text-center">
+                                        <h5
+                                            class="fw-bold text-lowercase">Casual
+                                            Dress</h5>
+
+                                        <span class="badge bg-dark mt-1">For
+                                            you</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 p-0">
+                                <div class="position-relative">
+                                    <img src="summerCollectionsImg/Tshirt.jpg"
+                                        class="img-fluid w-100"
+                                        style="height: 550px; object-fit: cover;"
+                                        alt="Marie von Behrens">
+                                    <div
+                                        class="position-absolute top-50 start-50 translate-middle text-black text-center">
+                                        <h5 class="fw-bold">T-Shirt</h5>
+                                        <span class="badge bg-dark mt-1">For
+                                            you</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--Summer collection-->
+            <section class="featured-products py-5" id="featured-products">
+                <div class="container">
+
+                    <div class="tab-content" id="categoryTabsContent">
+                        <!-- All Products Tab -->
+                        <section class="tab-pane fade show active" id="all"
+                            role="tabpanel" aria-labelledby="all-tab">
+                            <div
+                                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                                <!-- Product 1 -->
+                                <div class="col">
+                                    <div class="card h-100 product-card">
+
+                                        <img
+                                            src="summerCollectionsImg/VestTop.webp"
+                                            class="card-img-top"
+                                            alt="VestTop">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Vest Top</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                <p
+                                                    class="card-text fw-bold mb-0">$20.99</p>
+
+                                            </div>
+                                            <p class="card-text">Size:
+                                                XS,S</p>
+                                        </div>
+                                        <div
+                                            class="card-footer bg-white border-top-0">
+                                            <div class="d-flex gap-2">
+                                                <a
+                                                    href="buynow.html?name=Vest%20Top&price=20.99&size=XS,S&img=summerCollectionsImg/VestTop.webp"
+                                                    class="btn flex-grow-1">
+                                                    Buy Now
+                                                </a>
+
+                                                <button
+                                                    class="btn add-to-cart">
+                                                    <i
+                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 2 -->
+                                <div class="col">
+                                    <div class="card h-100 product-card">
+
+                                        <img
+                                            src="summerCollectionsImg/BlackandWhiteCropTop.jpg"
+                                            class="card-img-top"
+                                            alt="BlackandWhiteCropTop ">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Black and
+                                                White
+                                                Crop Top</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                <p
+                                                    class="card-text fw-bold mb-0">$18.99</p>
+
+                                            </div>
+                                            <p class="card-text">Size:
+                                                S,M,L</p>
+                                        </div>
+                                        <div
+                                            class="card-footer bg-white border-top-0">
+                                            <div class="d-flex gap-2">
+                                                <a
+                                                    href="buynow.html?name=Black%20and%20White%20Crop%20Top&price=18.99&size=S,M,L&img=summerCollectionsImg/BlackandWhiteCropTop.jpg"
+                                                    class="btn  flex-grow-1">Buy
+                                                    Now</a>
+
+                                                <button
+                                                    class="btn add-to-cart">
+                                                    <i
+                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 3 -->
+                                <div class="col">
+                                    <div class="card h-100 product-card">
+
+                                        <img
+                                            src="summerCollectionsImg/green skirt.webp"
+                                            class="card-img-top"
+                                            alt="green skirt">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Green
+                                                Skirt</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                <p
+                                                    class="card-text fw-bold mb-0">$26.99</p>
+
+                                            </div>
+                                            <p class="card-text">Size:
+                                                S,M</p>
+                                        </div>
+                                        <div
+                                            class="card-footer bg-white border-top-0">
+                                            <div class="d-flex gap-2">
+                                                <a
+                                                    href="buynow.html?name=Green%20Skirt&price=26.99&size=S,M&img=summerCollectionsImg/green skirt.webp "
+                                                    class="btn  flex-grow-1">Buy
+                                                    Now</a>
+
+                                                <button
+                                                    class="btn add-to-cart">
+                                                    <i
+                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 4 -->
+                                <div class="col">
+                                    <div class="card h-100 product-card">
+
+                                        <img
+                                            src="summerCollectionsImg/White mini skirt.webp"
+                                            class="card-img-top"
+                                            alt="Whiteminiskirt">
+                                        <div class="card-body">
+                                            <h5 class="card-title">White mini
+                                                skirt</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                <p
+                                                    class="card-text fw-bold mb-0">$24.99</p>
+
+                                            </div>
+                                            <p class="card-text">Size:
+                                                XS,S,L</p>
+                                        </div>
+                                        <div
+                                            class="card-footer bg-white border-top-0">
+                                            <div class="d-flex gap-2">
+                                                <a
+                                                    href="buynow.html?name=White%20mini%20skirt&price=24.99&size=XS,S,L&img=summerCollectionsImg/White mini skirt.webp"
+                                                    class="btn  flex-grow-1">Buy
+                                                    Now</a>
+                                                <button
+                                                    class="btn add-to-cart">
+                                                    <i
+                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- BIKINI Product 1 -->
+                                <div class="col">
+                                    <div class="card h-100 product-card">
+
+                                        <img
+                                            src="summerCollectionsImg/BlackBikini.avif"
+                                            class="card-img-top"
+                                            alt="BlackBikini">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Black
+                                                Bikini</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                <p
+                                                    class="card-text fw-bold mb-0">$28.99</p>
+
+                                            </div>
+                                            <p class="card-text">Size:
+                                                XS,S,L</p>
+                                        </div>
+                                        <div
+                                            class="card-footer bg-white border-top-0">
+                                            <div class="d-flex gap-2">
+                                                <a
+                                                    href="buynow.html?name=Black%20Bikini&price=28.99&size=XS,S,L&img=summerCollectionsImg/BlackBikini.avif"
+                                                    class="btn  flex-grow-1">Buy
+                                                    Now</a>
+                                                <button
+                                                    class="btn add-to-cart">
+                                                    <i
+                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 2 -->
+                                <div class="col">
+                                    <div class="card h-100 product-card">
+
+                                        <img
+                                            src="summerCollectionsImg/Goldie Bikini.webp"
+                                            class="card-img-top"
+                                            alt="Goldie Bikini">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Goldie
+                                                Bikini</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                <p
+                                                    class="card-text fw-bold mb-0">$32.99</p>
+
+                                            </div>
+                                            <p class="card-text">Size:
+                                                XS,S,L</p>
+                                        </div>
+                                        <div
+                                            class="card-footer bg-white border-top-0">
+                                            <div class="d-flex gap-2">
+                                                <a
+                                                    href="buynow.html?name=Goldie%20Bikini&price=32.99&size=XS,S,L&img=summerCollectionsImg/Goldie Bikini.webp"
+                                                    class="btn  flex-grow-1">Buy
+                                                    Now</a>
+
+                                                <button
+                                                    class="btn add-to-cart">
+                                                    <i
+                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sunglasses Product 1  -->
+                                <div class="col">
+                                    <div class="card h-100 product-card">
+
+                                        <img
+                                            src="summerCollectionsImg/WhiteSunglasses.jpg"
+                                            class="card-img-top"
+                                            alt="WhiteSunglasses"
+                                            id="accessories">
+                                        <div class="card-body">
+                                            <h5 class="card-title">White
+                                                Sunglasses</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                <p
+                                                    class="card-text fw-bold mb-0">$19.99</p>
+
+                                            </div>
+
+                                        </div>
+                                        <div
+                                            class="card-footer bg-white border-top-0">
+                                            <div class="d-flex gap-2">
+                                                <a
+                                                    href="buynow.html?name=White%20Sunglasses&price=19.99&size=One%20Size&img=summerCollectionsImg/WhiteSunglasses.jpg"
+                                                    class="btn flex-grow-1">Buy
+                                                    Now</a>
+                                                <button
+                                                    class="btn add-to-cart">
+                                                    <i
+                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sunglasses Product 2 -->
+                                <div class="col">
+                                    <div class="card h-100 product-card">
+
+                                        <img
+                                            src="summerCollectionsImg/The Witney Cateye Sunglasses.webp"
+                                            class="card-img-top"
+                                            alt="BlackSunglasses">
+                                        <div class="card-body">
+                                            <h5 class="card-title">The Witney
+                                                Cateye Sunglasses
+                                            </h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                <p
+                                                    class="card-text fw-bold mb-0">$29.99</p>
+
+                                            </div>
+
+                                        </div>
+                                        <div
+                                            class="card-footer bg-white border-top-0">
+                                            <div class="d-flex gap-2">
+                                                <a
+                                                    href="buynow.html?name=The%20Witney%20Cateye%20Sunglasses&price=29.99&size=One%20Size&img=summerCollectionsImg/The%20Witney%20Cateye%20Sunglasses.webp"
+                                                    class="btn flex-grow-1">Buy
+                                                    Now</a>
+
+                                                <button
+                                                    class="btn add-to-cart">
+                                                    <i
+                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!--Dresses part-->
+                        <section class="py-5" id="dresses">
+                            <div class="container-fluid">
+                                <div class="col-12 text-center">
+                                    <h2 class="section-title pt-3">Dresses
+                                        Collections</h2>
+                                    <p class="lead text-muted">Discover our
+                                        dresses
+                                        items
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--Dresses - Product 1 -->
+                            <section class="featured-products py-5"
+                                id="featured-products">
+                                <div class="container">
+
+                                    <div class="tab-content"
+                                        id="categoryTabsContent">
+                                        <!-- All Products Tab -->
+                                        <section
+                                            class="tab-pane fade show active"
+                                            id="all"
+                                            role="tabpanel"
+                                            aria-labelledby="all-tab">
+                                            <div
+                                                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                                                <div class="col"
+                                                    id="dresses-part">
+                                                    <div
+                                                        class="card h-100 product-card ">
+
+                                                        <img
+                                                            src="summerCollectionsImg/Isodora dress.webp"
+                                                            class="card-img-top"
+                                                            alt="Isodora dress"
+                                                            style="height: 70%;">
+                                                        <div class="card-body">
+                                                            <h5
+                                                                class="card-title">Isodora
+                                                                Dress
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center mb-2">
+                                                                <p
+                                                                    class="card-text fw-bold mb-0">$39.99</p>
+
+                                                            </div>
+
+                                                            <div class="size">
+                                                                <p>Size:S,M,L</p>
+                                                            </div>
+
+                                                        </div>
+                                                        <div
+                                                            class="card-footer bg-white border-top-0">
+                                                            <div
+                                                                class="d-flex gap-2">
+                                                                <a
+                                                                    href="buynow.html?name=Isodora%20dress&price=39.99&size=S,M,L&img=summerCollectionsImg/Isodora%20dress.webp"
+                                                                    class="btn  flex-grow-1">Buy
+                                                                    Now</a>
+
+                                                                <button
+                                                                    class="btn add-to-cart">
+                                                                    <i
+                                                                        class="fas fa-shopping-cart me-1"></i>Cart
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div
+                                                        class="card h-100 product-card">
+
+                                                        <img
+                                                            src="summerCollectionsImg/Midi Black Dress.jpg"
+                                                            class="card-img-top"
+                                                            alt="Midi Black Dress"
+                                                            style="height: 70%;">
+                                                        <div class="card-body">
+                                                            <h5
+                                                                class="card-title">Midi
+                                                                Black Dress</h5>
+                                                        </h5>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <p
+                                                                class="card-text fw-bold mb-0">$43.99</p>
+
+                                                        </div>
+
+                                                        <div class="size">
+                                                            <p>Size: M</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div
+                                                        class="card-footer bg-white border-top-0">
+                                                        <div
+                                                            class="d-flex gap-2">
+                                                            <a
+                                                                href="buynow.html?name=Midi%20Black%20Dress&price=26.99&size=M&img=summerCollectionsImg/Midi%20Black%20Dress.jpg"
+                                                                class="btn  flex-grow-1">Buy
+                                                                Now</a>
+
+                                                            <button
+                                                                class="btn add-to-cart">
+                                                                <i
+                                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Dresses -  Product 2 -->
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 product-card">
+
+                                                    <img
+                                                        src="summerCollectionsImg/Dress Lemon.webp"
+                                                        class="card-img-top"
+                                                        alt="Dress Lemon"
+                                                        style="height: 70%;">
+                                                    <div class="card-body">
+                                                        <h5
+                                                            class="card-title">Dress
+                                                            -
+                                                            Lemon
+                                                        </h5>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <p
+                                                                class="card-text fw-bold mb-0">$62.99</p>
+
+                                                        </div>
+                                                        <div class="size">
+                                                            <p>Size: XS,S,M</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div
+                                                        class="card-footer bg-white border-top-0">
+                                                        <div
+                                                            class="d-flex gap-2">
+                                                            <a
+                                                                href="buynow.html?name=Dress%20Lemon&price=62.99&size=XS,S,M&img=summerCollectionsImg/Dress%20Lemon.webp"
+                                                                class="btn  flex-grow-1">Buy
+                                                                Now</a>
+
+                                                            <button
+                                                                class="btn add-to-cart">
+                                                                <i
+                                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Dresses -  Product 3 -->
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 product-card">
+
+                                                    <img
+                                                        src="summerCollectionsImg/ChocolateDress.jpg"
+                                                        class="card-img-top"
+                                                        alt="ChocolateDress"
+                                                        style="height: 70%;">
+                                                    <div class="card-body">
+                                                        <h5
+                                                            class="card-title">Chocolate
+                                                            Dress
+                                                        </h5>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <p
+                                                                class="card-text fw-bold mb-0">$50.99</p>
+
+                                                        </div>
+                                                        <div class="size">
+                                                            <p>Size: M,
+                                                                L</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div
+                                                        class="card-footer bg-white border-top-0">
+                                                        <div
+                                                            class="d-flex gap-2">
+                                                            <a
+                                                                href="buynow.html?name=Chocolate%20Dress&price=50.99&size=M,L&img=summerCollectionsImg/ChocolateDress.jpg"
+                                                                class="btn  flex-grow-1">Buy
+                                                                Now</a>
+
+                                                            <button
+                                                                class="btn add-to-cart">
+                                                                <i
+                                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 product-card">
+
+                                                    <img
+                                                        src="images/LimeYellowDress.jpg"
+                                                        class="card-img-top"
+                                                        alt="LimeYellowDress"
+                                                        style="height: 70%;">
+                                                    <div class="card-body">
+                                                        <h5
+                                                            class="card-title">Lime
+                                                            Yellow Dress
+                                                        </h5>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <p
+                                                                class="card-text fw-bold mb-0">$50.99</p>
+
+                                                        </div>
+                                                        <div class="size">
+                                                            <p>Size: S,M,L</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div
+                                                        class="card-footer bg-white border-top-0">
+                                                        <div
+                                                            class="d-flex gap-2">
+                                                            <a
+                                                                href="buynow.html?name=Lime%20Yellow%20Dress&price=50.99&size=S,M,L&img=images/LimeYellowDress.jpg"
+                                                                class="btn  flex-grow-1">Buy
+                                                                Now</a>
+
+                                                            <button
+                                                                class="btn add-to-cart">
+                                                                <i
+                                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--Dresses Product 4-->
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 product-card">
+
+                                                    <img
+                                                        src="summerCollectionsImg/WeddingDress.png"
+                                                        class="card-img-top"
+                                                        alt="WeddingDress"
+                                                        style="height: 70%;">
+                                                    <div class="card-body">
+                                                        <h5
+                                                            class="card-title">Wedding
+                                                            Dress
+                                                        </h5>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <p
+                                                                class="card-text fw-bold mb-0">$60.99</p>
+
+                                                        </div>
+
+                                                        <div class="size">
+                                                            <p>Size: S,M</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div
+                                                        class="card-footer bg-white border-top-0">
+                                                        <div
+                                                            class="d-flex gap-2">
+                                                            <a
+                                                                href="buynow.html?name=Wedding%20Dress&price=60.99&size=S,M&img=summerCollectionsImg/WeddingDress.png"
+                                                                class="btn  flex-grow-1">Buy
+                                                                Now</a>
+
+                                                            <button
+                                                                class="btn add-to-cart">
+                                                                <i
+                                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 product-card">
+
+                                                    <img
+                                                        src="summerCollectionsImg/Short Dress.jpg"
+                                                        class="card-img-top"
+                                                        alt="Short Dress"
+                                                        style="height: 70%;">
+                                                    <div class="card-body">
+                                                        <h5
+                                                            class="card-title">Short
+                                                            Brown Dress
+                                                        </h5>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <p
+                                                                class="card-text fw-bold mb-0">$34.99</p>
+
+                                                        </div>
+
+                                                        <div class="size">
+                                                            <p>Size: XS,S,L</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div
+                                                        class="card-footer bg-white border-top-0">
+                                                        <div
+                                                            class="d-flex gap-2">
+                                                            <a
+                                                                href="buynow.html?name=Short%20Dress&price=34.99&size=XS,S,L&img=summerCollectionsImg/Short Dress.jpg"
+                                                                class="btn  flex-grow-1">Buy
+                                                                Now</a>
+
+                                                            <button
+                                                                class="btn add-to-cart">
+                                                                <i
+                                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                <div
+                                                    class="card h-100 product-card">
+
+                                                    <img
+                                                        src="summerCollectionsImg/White Summer Short Dress.webp"
+                                                        class="card-img-top"
+                                                        alt="WhiteSummerShortDress"
+                                                        style="height: 70%;">
+                                                    <div class="card-body">
+                                                        <h5
+                                                            class="card-title">White
+                                                            Summer Short Dress
+                                                        </h5>
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center mb-2">
+                                                            <p
+                                                                class="card-text fw-bold mb-0">$54.99</p>
+
+                                                        </div>
+                                                        <div class="size">
+                                                            <p>Size: S,M</p>
+                                                        </div>
+
+                                                    </div>
+                                                    <div
+                                                        class="card-footer bg-white border-top-0">
+                                                        <div
+                                                            class="d-flex gap-2">
+                                                            <a
+                                                                href="buynow.html?name=White%20Summer%20Short%20Dress&price=54.99&size=S,M&img=summerCollectionsImg/White%20Summer%20Short%20Dress.webp"
+                                                                class="btn  flex-grow-1">Buy
+                                                                Now</a>
+
+                                                            <button
+                                                                class="btn add-to-cart">
+                                                                <i
+                                                                    class="fas fa-shopping-cart me-1"></i>Cart
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </main>
+
+                        <!--Footer-->
+                        <footer
+                            class="footer bg-dark text-white py-5 mt-5 ">
+                            <div class="container">
+                                <div class="row gy-4">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h5 class="mb-3">Fashionista</h5>
+                                        <p>Your destination for the latest
+                                            fashion trends and styles.</p>
+                                        <div class="social-icons mt-3">
+                                            <a href="#"
+                                                class="text-white me-3"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a href="#"
+                                                class="text-white me-3"><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a href="#"
+                                                class="text-white me-3"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="#"
+                                                class="text-white"><i
+                                                    class="fab fa-pinterest"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-2">
+                                        <h5 class="mb-3">Shop</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><a
+                                                    href="summercollection.html"
+                                                    class="text-white text-decoration-none">Women</a></li>
+                                            <li class="mb-2"><a
+                                                    href="summercollection.html#accessories"
+                                                    class="text-white text-decoration-none">Accessories</a></li>
+                                            <li class="mb-2"><a
+                                                    href="index.html#featured-products"
+                                                    class="text-white text-decoration-none">Sale</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-lg-2">
+                                        <h5 class="mb-3">Help</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><a href="#"
+                                                    class="text-white text-decoration-none">Shipping</a></li>
+                                            <li class="mb-2"><a href="#"
+                                                    class="text-white text-decoration-none">Returns</a></li>
+                                            <li class="mb-2"><a href="#"
+                                                    class="text-white text-decoration-none">Contact
+                                                    Us</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-12 col-lg-4">
+                                        <h5 class="mb-3">Contact</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i
+                                                    class="fas fa-map-marker-alt me-2"></i>
+                                                10000 Prishtine, Rruga
+                                                B</li>
+                                            <li class="mb-2"><i
+                                                    class="fas fa-phone me-2"></i>
+                                                +383 (45) 123-456</li>
+                                            <li class="mb-2"><i
+                                                    class="fas fa-envelope me-2"></i>
+                                                info@fashionista.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-12 text-center">
+                                        <p class="mb-0">&copy; 2025
+                                            Fashionista. All rights
+                                            reserved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                        <script src="script.js"></script>
+
+                    </body>
+                </html>

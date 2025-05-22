@@ -1,0 +1,157 @@
+.hero-slide {
+    min-height: 100vh;
+    background-color: rgb(202, 152, 101);
+    display: flex;
+    align-items: center;
+}
+
+.carousel-inner {
+    min-height: auto;
+
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Butonat e navigimit */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 6%;
+}
+
+
+
+/*  shigjetat e newArrivalsCarousel */
+#newArrivalsCarousel .carousel-control-prev-icon,
+#newArrivalsCarousel .carousel-control-next-icon {
+    background-color: #9a836c;
+}
+
+
+
+/*  butonat aktiv */
+.nav-pills .nav-link.active {
+    background-color: rgb(78, 62, 62);
+    color: white;
+}
+
+.btn {
+    background-color: #cd9159;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #dec0a4;
+}
+
+/* Per desktop tmdhaja dhe tableta */
+@media (min-width: 1025px) {
+    .hero-slide {
+        min-height: 100vh;
+
+    }
+
+    .hero-image {
+        max-height: 500px;
+
+    }
+}
+
+/* Per ekranet  landscape per pajisje me te medha */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .hero-slide {
+        min-height: 80vh;
+
+    }
+
+    .hero-image {
+        max-height: 300px;
+
+    }
+}
+
+/* Per  mobile */
+@media (max-width: 767.98px) {
+    .hero-slide {
+        min-height: 70vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-height: 250px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-image-mobile {
+        display: block !important;
+        margin-top: 1rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+/*New arrivals carousel*/
+.carousel-inner {
+    min-height: initial;
+    /*e kthen ne vleren fillestare te paracaktuar nga shfletuesi*/
+    height: auto;
+}
+
+#newArrivalsCarousel .card {
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#newArrivalsCarousel .carousel-item {
+    height: auto;
+}
+
+/*  iPad */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #newArrivalsCarousel {
+        margin-bottom: 0;
+        height: auto;
+    }
+
+    #newArrivalsCarousel .carousel-inner {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    .new-arrivals {
+        padding-bottom: 1rem;
+    }
+
+    .new-arrivals section {
+        height: auto !important;
+        min-height: auto !important;
+    }
+}
+
+
+
+
+.new-arrivals+section {
+    margin-top: 0;
+}
